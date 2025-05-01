@@ -39,13 +39,13 @@ After the if statement, the set of potential words is converted to a list for ra
 Then the function updates the last_word to be the chosen_word, then assigns and saves the chosen_word to the chosen_words text file. Then it removes the chosen word from the capitalized and sorted text file. Then for debugging purposes the function right now prints out the chosen_word and then returns the chosen_word
 
 
-### Check_word()
+### *Check_word()*
 This function is the main logic of the game
 
-### Replay_game()
+### *Replay_game()*
 This function asks the user if they want to play again. If yes, it restarts the game by recalling the check_word() function. If no, it exits the program
 
-### Provide_hint
+### *Provide_hint*
 Provides a hint based on user choice. It takes in two inputs, the chosen word and a list of the positions that are already revealed. This function while it does work, needs some improvement.
 - keep track of all of the revealed positions so that the user can't purposefully make other hint options appear. For example the first guess had 4 correct and 1 not. Then user enters a guess that had only 2 correct but 3 wrong, then selects hint to find the wrong letter from the first guess.
 
